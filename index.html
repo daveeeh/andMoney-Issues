@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-neutral-950 text-neutral-100 antialiased">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>andmoney</title>
+  <meta name="description" content="andmoney — In active development for Android.">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="min-h-full flex flex-col justify-between items-center px-6 py-12 selection:bg-neutral-800 selection:text-white">
+
+  <!-- Top spacer to keep central balance -->
+  <div></div>
+
+  <!-- Central Card -->
+  <main class="w-full max-w-sm flex flex-col items-center text-center">
+    
+    <!-- App Icon from Google Play -->
+    <div class="relative mb-6">
+      <img 
+        src="https://play-lh.googleusercontent.com/HWwDYmj8J3FJBTWRj-oRIbpMJRbtSuvv4zJIlJGp1K18okK3hdB3THIzwI_8zBBMjPc7nTa--t10U85H9J7O=w240-h480-rw" 
+        alt="AndMoney App Icon" 
+        class="w-20 h-20 rounded-2xl shadow-lg border border-neutral-800 object-cover bg-neutral-900"
+        loading="eager"
+      />
+    </div>
+
+    <!-- Title & Subtitle -->
+    <h1 class="text-2xl font-semibold tracking-tight text-white mb-2">andmoney</h1>
+    <div class="inline-flex items-center gap-2 text-xs font-medium text-neutral-400 mb-8">
+      <span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+      In active development
+    </div>
+
+    <!-- Action Links -->
+    <div class="w-full flex flex-col gap-3">
+      
+      <!-- 1. Google Play Store Link (UPDATE YOUR PACKAGE NAME BELOW) -->
+      <a href="https://play.google.com/store/apps/details?id=dev.hodges.money" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         class="w-full flex items-center justify-center gap-3 py-3 px-4 rounded-xl bg-neutral-900 hover:bg-neutral-850 hover:border-neutral-700 border border-neutral-800 text-sm font-medium text-neutral-200 transition-colors">
+        <!-- Google Play Icon -->
+        <svg class="w-4 h-4 fill-current text-emerald-400" viewBox="0 0 24 24">
+          <path d="M3.609 1.814L13.792 12 3.61 22.186a1.956 1.956 0 0 1-.61-.954V2.768c.15-.36.368-.69.609-.954zm11.24 11.24l2.585 2.585-12.01 6.863 9.425-9.448zm0-2.108L5.424 1.5l12.01 6.863-2.585 2.583zm1.485 1.054l4.054 2.316c.813.465.813 1.22 0 1.685l-4.054 2.317-2.31-2.31 2.31-2.308z"/>
+        </svg>
+        <span>Google Play Store</span>
+      </a>
+
+      <!-- 2. GitHub Issues Link (UPDATE YOUR REPO PATH BELOW) -->
+      <a href="https://github.com/daveeeh/andMoney-Issues/issues" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         class="w-full flex items-center justify-center gap-3 py-3 px-4 rounded-xl bg-neutral-900 hover:bg-neutral-850 hover:border-neutral-700 border border-neutral-800 text-sm font-medium text-neutral-200 transition-colors">
+        <!-- GitHub Icon -->
+        <svg class="w-4 h-4 fill-current text-neutral-400" viewBox="0 0 24 24">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+        </svg>
+        <span>GitHub Issues</span>
+      </a>
+
+      <!-- 3. Ko-fi Button (REPLACE 'YOUR_KOFI_NAME' WITH YOUR HANDLE) -->
+      <a href="https://ko-fi.com/daveeeh" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         class="w-full flex items-center justify-center gap-3 py-3 px-4 rounded-xl bg-[#29abe0]/10 hover:bg-[#29abe0]/15 border border-[#29abe0]/25 text-sm font-medium text-[#7ad4f7] transition-colors">
+        <!-- Ko-fi Cup Icon -->
+        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+          <path d="M23.881 8.948c-.773-4.085-4.859-4.593-4.859-4.593H.723c-.604 0-.679.798-.679.798s-.082 7.324-.022 11.822c.164 2.424 2.586 2.672 2.586 2.672s8.267-.023 11.966-.049c2.438-.426 2.683-2.566 2.683-2.566l.031-1.636s2.502.26 4.542-1.077c2.05-1.343 2.05-5.371 2.05-5.371zm-4.346 3.655s-.502 1.333-2.023 1.333h-1.68l-.001-3.693h1.681c1.521 0 2.023 1.333 2.023 2.36z"/>
+        </svg>
+        <span>Support on Ko-fi</span>
+      </a>
+
+    </div>
+  </main>
+
+  <!-- Clean, unobtrusive footer -->
+  <footer class="text-xs text-neutral-600 font-mono">
+    andmoney.app
+  </footer>
+
+</body>
+</html>
