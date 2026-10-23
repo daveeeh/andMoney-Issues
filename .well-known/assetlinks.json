@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "dev.hodges.money",
+      "sha256_cert_fingerprints": [
+        "91:37:45:F0:5C:12:86:AF:75:4E:A4:F3:73:09:1F:81:E2:DA:C5:4B:4B:53:F5:CC:4F:1D:F3:13:CA:35:AD:A8",
+        "28:D8:1E:D7:06:25:90:C0:C8:7D:13:A2:97:28:2B:B2:68:CF:9B:D5:71:84:EB:D6:F7:FC:D7:79:B5:91:53:86"
+      ]
+    }
+  }
+]
